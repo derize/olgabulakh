@@ -6767,8 +6767,9 @@ body.show_burger {
   }
 
   .callback {
-    margin-top: 1050px;
+    margin-top: 0;
     max-width: 100%;
+    width: 100%;
   }
 
   .callback__body {
@@ -7047,25 +7048,6 @@ body.show_burger {
   }
 }
 
-@media (max-width: 430px) {
-  html,
-  body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .header,
-  .about,
-  .consultation,
-  .quote,
-  .topics,
-  .psycho,
-  .callback {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-}
-
 @media (prefers-reduced-motion) {
   .animated {
     -webkit-animation: unset !important;
@@ -7073,5 +7055,32 @@ body.show_burger {
     animation: unset !important;
     -o-transition: none !important;
     transition: none !important;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .header__menu {
+    max-width: 100% !important;
+  }
+
+  .topics__body,
+  .callback {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .psycho__body {
+    min-height: 1050px !important;
+    position: relative !important;
+  }
+
+  .callback {
+    margin-top: 0 !important;
   }
 }
