@@ -6334,13 +6334,13 @@ body.show_burger {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 430px) {
   .header {
     min-height: 652px;
   }
 
   .header__menu {
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .header__menu {
@@ -6709,7 +6709,7 @@ body.show_burger {
 
   .topics__body {
     padding: 40px 20px;
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .topics__title {
@@ -6768,7 +6768,7 @@ body.show_burger {
 
   .callback {
     margin-top: 1050px;
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .callback__body {
@@ -7044,6 +7044,25 @@ body.show_burger {
 @media (min-width: 1024px) and (max-width: 1440px) {
   .callbackmodal {
     overflow: hidden;
+  }
+}
+
+@media (max-width: 430px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .header,
+  .about,
+  .consultation,
+  .quote,
+  .topics,
+  .psycho,
+  .callback {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
 
